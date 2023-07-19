@@ -1,0 +1,214 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+p{
+    font-size:20px ;
+    text-align: justify;
+    margin: 0
+}
+
+ul{ 
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+main{
+    width: 100%;
+    height: fit-content;
+    padding:2% 7% 2% 7%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: #fff2df;
+    color:#674d3c;
+}
+
+header{
+    position: relative;
+    display: flex; 
+    color:#d9ad7c;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+header .header_backimg{
+    background-image: url(../imgs/eva-darron-oCdVtGFeDC0-unsplash.jpg);    
+    background-position-y: 25%;
+    background-color: #555;
+    background-blend-mode: multiply;
+    background-size:cover;
+    height: 400px;
+    width: 100%;
+}
+.hidden-nav{
+    display: none;
+}
+
+header .header_nav{
+    list-style: none;
+    position: absolute;
+    padding:2% 5% 0% 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_nav .header_logo{
+    width: 15%;
+    height: 100%;
+}
+
+.header_nav a:hover{
+    background-color: aliceblue;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 21px;
+}
+
+.header_nav a{
+    font-size: 20px;
+    transition: 0.3s ;
+}
+
+.header_content{
+    position: absolute;
+    top: 25%;
+    height: 200px;
+    width: 100%;
+}
+
+.header_content li{
+    padding:6% 0% 0% 5%;
+}
+
+.header_content li h2{
+    color: #a2836e;
+    margin:0px;
+    font-size:50px;
+}
+
+.header_content li p{
+    font-size: 20px;
+    width: 70%;
+}
+
+hr{
+    margin: 5px;
+}
+
+main h2{
+    font-size:50px;
+    color: #a2836e;
+}
+
+footer{
+    padding:2% 7% 1% 7%;
+    display: flex;
+    width: 100%;
+    background-color: #a2836e;
+    justify-content: space-between;
+}
+
+footer .info-footer{
+    width: 70%;
+    color: #674d3c;
+}
+.info-footer ul{
+    display: flex;
+    padding: 0px;
+    
+}
+.info-footer li{
+    margin: 0px 5% 0px 0%;
+}
+.info-footer a{
+    
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: underline;
+    transition: 0.3s ;
+}
+footer .social-media{
+    width: 30%;
+    align-items: center;
+    color: #674d3c;
+}
+footer .logos-container{
+    display: flex;
+    justify-content: flex-start;
+
+}
+footer .logos-container img{
+    width: 15%;
+    height: 100%;
+
+    margin: 0px 10% 0px 5%;
+}
+
+@media only screen and (max-width: 950px) {
+    .header_nav, .header_nav li{
+        display: none;
+    }
+    .hidden-nav{
+        position: absolute;
+        padding: 1% 0px 1% 0px;
+        background-color: #674d3c;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .hidden-nav img{
+        width: 40px;
+        padding: 5px ;
+        border: 1px solid black;
+        border-radius: 10px;
+
+    }
+    .dropdown-header {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        
+        position: relative;
+        display: inline-block;
+      }
+    
+    .dropdown-content-header {
+        width: 100%;
+        display: none;
+        position: absolute;
+        
+        margin-bottom: 10px;
+        background-color: inherit;
+        min-width: 160px;
+    }
+    .dropdown-header:hover .dropdown-content-header {
+        display: flex;
+       
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+    }
+    .dropdown-content-header:hover {
+        display: flex;
+        
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+    }
+    .dropdown-header:hover .dropdown-content-header a {
+        font-size: 25px;
+    }
+}
