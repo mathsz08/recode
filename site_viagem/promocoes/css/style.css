@@ -16,14 +16,12 @@ main{
 .europa_lista{
     margin: 0;
     padding: 0;
-
 }
 
 .lugares{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-
 }
 
 .dropdown {
@@ -31,6 +29,7 @@ main{
     position: relative;
     display: inline-block;
   }
+
 .dropdown:hover .dropdown-content {
     display: flex;
     flex-direction: column;
@@ -45,6 +44,7 @@ main{
     background-color: inherit;
     min-width: 160px;
 }
+
 .valores{
     margin-top: 10px;
 }
@@ -52,6 +52,7 @@ main{
 .valores div{
     margin-left: 10px;
 }
+
 .slider{
     border-radius: 50px;  
     appearance: none;
@@ -69,6 +70,7 @@ main{
     border-radius: 50%;
     cursor: pointer;
 }
+
 .valores label{
     font-size: 20px;
 }
@@ -76,43 +78,48 @@ main{
 .tipo{
     margin-top: 10px;
 }
+
 .input-container{
     margin-left: 10px;
 }
+
 .input-container label{
     font-size: 20px;
 }
+
 .lista_viagens{
     margin-left: 50px;
 }
+
 .viagem:not(:first-child){
     margin-top: 5%;
 }
-.card-viagem{
+
+.viagem .m-card{
     width: 90%;
+
     height:70% ;
     padding: 2%;
-    box-sizing: border-box;
-    border: 1px solid #674d3c;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
 }
 
-.card-viagem img{
-    width: 30%;
-    height: 40%;
+.viagem .m-card img{
+    width: 205px;
+    height: 137px;
     border-radius: 10px;
 }
-.card-viagem .info{
+
+.viagem .m-card .info{
     margin-left:5% ;
     width: 100%;
 }
-.card-viagem .sub-card{
+
+.viagem .m-card .sub-card{
     display: flex;
     align-items: end;
 }
-.card-viagem .sub-info{
+
+.viagem .m-card .sub-info{
     width: 70%;
 }
 
@@ -120,4 +127,39 @@ main{
     height: 30px;
     width: 50%;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px){
+    .filtro_box label{
+        font-size: 15px;
+    }
+    .viagem .m-card{
+        padding-top: 5%;
+        width: 90%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .viagem .m-card .sub-card{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .viagem .m-card .info{
+        margin-left:5% ;
+        width: 80%;
+    }
+
+    .viagem .m-card img{
+        width: 300px;
+        height: 190px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sub-card button{
+        margin-left: 20px;
+        width: 80%;
+    }
 }

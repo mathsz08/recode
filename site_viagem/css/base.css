@@ -18,10 +18,18 @@ ul{
     padding: 0;
 }
 
+h4{
+    margin: 0;
+}
+
 a{
     color: inherit;
     cursor: pointer;
     text-decoration: underline;
+}
+
+hr{
+    margin: 5px;
 }
 
 main{
@@ -40,6 +48,15 @@ header{
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+footer{
+    padding:2% 7% 1% 7%;
+    display: flex;
+    width: 100%;
+    background-color: #fff2df;
+    justify-content: space-between;
+}
+
+
 header .header_backimg{
     background-image: url(../imgs/eva-darron-oCdVtGFeDC0-unsplash.jpg);    
     background-position-y: 25%;
@@ -49,6 +66,7 @@ header .header_backimg{
     height: 400px;
     width: 100%;
 }
+
 .hidden-nav{
     display: none;
 }
@@ -102,56 +120,54 @@ header .header_nav{
     width: 70%;
 }
 
-hr{
-    margin: 5px;
-}
-
 main h2{
     font-size:50px;
     color: #a2836e;
 }
 
-footer{
-    padding:2% 7% 1% 7%;
+.m-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
-    width: 100%;
-    background-color: #a2836e;
-    justify-content: space-between;
+    border-radius: 10px;
 }
 
 footer .info-footer{
     width: 70%;
     color: #674d3c;
 }
+
 .info-footer ul{
     display: flex;
     padding: 0px;
     
 }
+
 .info-footer li{
     margin: 0px 5% 0px 0%;
 }
+
 .info-footer a{
-    
     cursor: pointer;
     font-size: 20px;
     text-decoration: underline;
     transition: 0.3s ;
 }
+
 footer .social-media{
     width: 30%;
     align-items: center;
     color: #674d3c;
 }
+
 footer .logos-container{
     display: flex;
     justify-content: flex-start;
 
 }
+
 footer .logos-container img{
     width: 15%;
     height: 100%;
-
     margin: 0px 10% 0px 5%;
 }
 
@@ -159,6 +175,7 @@ footer .logos-container img{
     .header_nav, .header_nav li{
         display: none;
     }
+
     .hidden-nav{
         position: absolute;
         padding: 1% 0px 1% 0px;
@@ -167,47 +184,46 @@ footer .logos-container img{
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
+
     .hidden-nav img{
         width: 40px;
         padding: 5px ;
         border: 1px solid black;
         border-radius: 10px;
-
     }
+
     .dropdown-header {
         margin-top: 10px;
         margin-bottom: 10px;
         width: 100%;
-        
         position: relative;
         display: inline-block;
-      }
+    }
     
     .dropdown-content-header {
         width: 100%;
         display: none;
         position: absolute;
-        
         margin-bottom: 10px;
         background-color: inherit;
         min-width: 160px;
     }
+
     .dropdown-header:hover .dropdown-content-header {
         display: flex;
-       
         flex-direction: row;
         justify-content: space-around;
         position: relative;
     }
+
     .dropdown-content-header:hover {
         display: flex;
-        
         flex-direction: row;
         justify-content: space-around;
         position: relative;
     }
+
     .dropdown-header:hover .dropdown-content-header a {
         font-size: 25px;
     }
