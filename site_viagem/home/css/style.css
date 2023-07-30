@@ -1,9 +1,4 @@
-/** 
-    #674d3c
-    #a2836e
-    #d9ad7c
-    #fff2df
-**/
+/* CSS HOME.HTML */
 
 .aboutus p{  
     padding: 20px 10px 10px 10px ; 
@@ -35,25 +30,24 @@
 }
 
 .galeria img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 5px;
-      border: 2px #674d3c dashed ;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px #674d3c dashed ;
 }
 
 .galeria img:hover{
-        transform: scale(1.02);
-        transition: .3s ease-in-out;
+    transform: scale(1.02);
+    transition: .3s ease-in-out;
 }
 
 .span-vert{
-      grid-column-end: span 1;
-      grid-row-end: span 2;
+    grid-column-end: span 1;
+    grid-row-end: span 2;
 }
 
 .span-hori{
-      grid-column-end: span 2;
-      grid-row-end: span 1;
+    grid-column-end: span 2;
+    grid-row-end: span 1;
 }
-

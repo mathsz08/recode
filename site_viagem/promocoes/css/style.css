@@ -1,3 +1,5 @@
+/*CSS PROMOCOES.HTML*/
+
 main{
     display: flex;
 }
@@ -21,14 +23,14 @@ main{
 .lugares{
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 .dropdown {
-    margin-top: 10px;
+    margin-top: 1rem;
     position: relative;
     display: inline-block;
-  }
+}
 
 .dropdown:hover .dropdown-content {
     display: flex;
@@ -40,21 +42,21 @@ main{
     display: none;
     position: absolute;
     padding-left: 10%;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     background-color: inherit;
-    min-width: 160px;
+    min-width: 16rem;
 }
 
 .valores{
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .valores div{
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 .slider{
-    border-radius: 50px;  
+    border-radius: 5rem;  
     appearance: none;
     background:#d9ad7c;
     opacity: 0.7;
@@ -72,23 +74,23 @@ main{
 }
 
 .valores label{
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .tipo{
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .input-container{
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 .input-container label{
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .lista_viagens{
-    margin-left: 50px;
+    margin-left: 5rem;
 }
 
 .viagem:not(:first-child){
@@ -97,16 +99,15 @@ main{
 
 .viagem .m-card{
     width: 90%;
-
     height:70% ;
     padding: 2%;
     display: flex;
 }
 
 .viagem .m-card img{
-    width: 205px;
-    height: 137px;
-    border-radius: 10px;
+    width: 20.5rem;
+    height: 13.7rem;
+    border-radius: 1rem;
 }
 
 .viagem .m-card .info{
@@ -124,15 +125,16 @@ main{
 }
 
 .sub-card button{
-    height: 30px;
+    height: 3rem;
     width: 50%;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 @media only screen and (max-width: 800px){
     .filtro_box label{
-        font-size: 15px;
+        font-size: 1.5rem;
     }
+    
     .viagem .m-card{
         padding-top: 5%;
         width: 90%;
@@ -152,14 +154,14 @@ main{
     }
 
     .viagem .m-card img{
-        width: 300px;
-        height: 190px;
-        border-radius: 10px;
-        margin-bottom: 10px;
+        width: 30rem;
+        height: 19rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
     }
 
     .sub-card button{
-        margin-left: 20px;
+        margin-left: 2rem;
         width: 80%;
     }
 }

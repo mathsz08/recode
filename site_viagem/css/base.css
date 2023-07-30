@@ -1,14 +1,17 @@
 
+/*CSS BASE PROJETO*/
+
 * {
     box-sizing: border-box;
 }
 
 html,body{
     height: 100%;
+    font-size:62.5% ;
 }
 
 p{
-    font-size:20px ;
+    font-size:2rem;
     text-align: justify;
     margin: 0
 }
@@ -18,18 +21,33 @@ ul{
     padding: 0;
 }
 
+h2{
+    font-size:5rem;
+    color:#674d3c;
+}
+
+h3{
+    font-size:4rem;
+}
+
 h4{
     margin: 0;
+    font-size: 3rem;
 }
 
 a{
     color: inherit;
+    font-size: 1.5rem;
     cursor: pointer;
     text-decoration: underline;
 }
 
 hr{
-    margin: 5px;
+    margin: 0.5rem;
+}
+
+input,label,button, textarea, option, select{
+    font-size: 1.5rem;
 }
 
 main{
@@ -86,22 +104,22 @@ header .header_nav{
     height: 100%;
 }
 
-.header_nav a:hover{
-    background-color: aliceblue;
-    border-radius: 40px;
-    padding: 10px;
-    font-size: 21px;
+.header_nav  a:hover{
+    background-color: aliceblue;   
+    transform: scale(1.1);
 }
 
 .header_nav a{
-    font-size: 20px;
+    padding: 1rem;
+    border-radius: 4rem;
+    font-size: 2rem;
     transition: 0.3s ;
 }
 
 .header_content{
     position: absolute;
     top: 25%;
-    height: 200px;
+    height: 20rem;
     width: 100%;
 }
 
@@ -116,12 +134,12 @@ header .header_nav{
 }
 
 .header_content li p{
-    font-size: 20px;
+    font-size: 2rem;
     width: 70%;
 }
 
 main h2{
-    font-size:50px;
+    font-size:5rem;
     color: #a2836e;
 }
 
@@ -139,7 +157,6 @@ footer .info-footer{
 .info-footer ul{
     display: flex;
     padding: 0px;
-    
 }
 
 .info-footer li{
@@ -148,7 +165,7 @@ footer .info-footer{
 
 .info-footer a{
     cursor: pointer;
-    font-size: 20px;
+    font-size: 2rem;
     text-decoration: underline;
     transition: 0.3s ;
 }
@@ -162,7 +179,6 @@ footer .social-media{
 footer .logos-container{
     display: flex;
     justify-content: flex-start;
-
 }
 
 footer .logos-container img{
@@ -187,15 +203,15 @@ footer .logos-container img{
     }
 
     .hidden-nav img{
-        width: 40px;
-        padding: 5px ;
-        border: 1px solid black;
-        border-radius: 10px;
+        width: 4rem;
+        padding: 0.5rem ;
+        border: 0.1rem solid black;
+        border-radius: 1rem;
     }
 
     .dropdown-header {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         width: 100%;
         position: relative;
         display: inline-block;
@@ -205,9 +221,9 @@ footer .logos-container img{
         width: 100%;
         display: none;
         position: absolute;
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
         background-color: inherit;
-        min-width: 160px;
+        min-width: 16rem;
     }
 
     .dropdown-header:hover .dropdown-content-header {
@@ -225,6 +241,6 @@ footer .logos-container img{
     }
 
     .dropdown-header:hover .dropdown-content-header a {
-        font-size: 25px;
+        font-size: 2.5rem;
     }
 }
